@@ -1,0 +1,289 @@
+/* css reset */
+* {
+  /* margin and padding reset along with box-sizing set to border box */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main Styling */
+
+html, body {
+/* set the font family to Segoe UI and sans-serif  */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.7em;
+}
+
+a {
+  /* Give a color #333 and set text decoration to none */
+  color:#333;
+  text-decoration:none;
+}
+h1, h2, h3 {
+  /* set the bottom padding to 20px */
+  padding-bottom: 20px;
+
+}
+p {
+  /* provide 10px margin to top and bottom */
+  margin: 10px 0;
+}
+/* Utility Classes */
+.container {
+/* set the margin to auto for navbar container class and max-width to 1100px, also overflow set to auto */
+/* padding to set to 20px left and right and 0px top and bottom */
+margin:auto;
+max-width: 1100px;
+overflow: auto;
+padding: 0 20px;
+}
+.text-primary {
+  /* add color #f7c08a */
+  color: #f7c08a;
+}
+.lead {
+/* add font size 20 px */
+font-size: 20px;
+}
+.btn {
+  /* set the button as an inline block with fontsize to 18px, color #fff and background to #333 */
+  /* Padding 13px top/bottom, 20px left/right, border set to none and cursor set to pointer  */
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  background: #333;
+  padding: 13px 20px;
+  border:none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+.btn-light {
+  /* background set to #f4f4f4 and color to #333 ; */
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  /* add background color #333 and color to #fff */
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  /* add background color #f4f4f4 and color to #333 */
+  background: #f4f4f4;
+  color:#333;
+}
+.bg-primary {
+  /* add background color #333 and color to #f7c08a */
+  background: #f7c08a;
+  color: #333;
+}
+.clr {
+  /* set clear both to clear the float */
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.py-1 {
+  padding: 10px 0px;
+}
+.py-2 {
+  padding: 20px 0px;
+}
+.py-3{
+  padding: 50px 0px;
+}
+
+/* Nav Bar */
+#navbar {
+  /* provide a background color to #333 and text color to #fff along with overflow set to auto*/
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+}
+#navbar a {
+  /* color of the links set to #fff */
+  color: #fff;
+}
+#navbar .logo {
+  /* align the logo to the left using floar and set padding top to 20px */
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  /* remove the list-style by setting it to none */
+  /* align them to right by setting the float to right */
+  list-style: none;
+  float: right;
+}
+#navbar ul li{
+  float: left;
+}
+#navbar ul li a {
+/* set the list to block elements with padding 20px and align the text to center */
+display: block;
+padding:20px;
+text-align: center;
+}
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+  /* set the background color to #444 and color to #f7c08a */
+  background: #444;
+  color: #f7c08a;
+}
+/* Include another class to apply float left to the menu items */
+
+
+/* Showcase */
+#showcase {
+  /* add the background image, no repeat and center/cover*/
+  background-image: url(img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+}
+#showcase .showcase-content {
+  /* add color #fff, text align to center and add padding top 170px  */
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+/* add font size to 60px and give line height to 1.2em */
+font-size: 60px;
+line-height: 1.2em;
+}
+#showcase .showcase-content p {
+/* add padding bottom 20px and give line height to 1.7em */
+padding-bottom: 20px;
+line-height: 1.7em;
+}
+
+/* Home-Info */
+#home-info{
+  /* add height 400px */
+  height: 450px;
+}
+#home-info .info-img {
+  /*  set this section to float left with width 50% and add background image and min height to 100%*/
+  float: left;
+  width: 50%;
+  background: url(img/photo-1.jpg) no-repeat;
+  min-height: 100%;
+}
+#home-info .info-content {
+  /*  set this section to float right with width 50% and add background image and min height to 100%, text align to 50px and 30px. Also overflow set to hidden to remove any scroll bar*/
+  float: right;
+  width: 50%;
+  max-height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+#home-info .info-content p {
+  /* set the padding-bottom to 30px */
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  /* Float all three of them to left  */
+  /* Provide width 33.3% and padding 58px, text aligned to center */
+  float: left;
+  width: 33.3%;
+  padding:50px;
+  text-align: center;
+}
+.box i {
+  /* set the margin bottom as 10px */
+  margin-bottom: 10px;
+}
+
+/* About-info */
+
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right img {
+  display: block;
+  width: 70%;
+  margin:auto;
+  border-radius: 50%;
+
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+.testimonials {
+  height: 100%;
+  background: url(img/test-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100px;
+}
+.testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.testimonials .testimonial img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+/* Contact Form*/
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding:10px;
+  border:1px #ddd solid;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+.contact-form input:focus , .contact-form textarea:focus {
+outline:none;
+border-color: #f7c08a;
+
+/* Footer */
+#main-footer {
+/* Add background color #444, color #fff and padding 20px, also text align to center */
+text-align: center;
+background:#444;
+color: #fff;
+padding:20px;
+}
+
